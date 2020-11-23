@@ -28,7 +28,7 @@ h2 {
     margin: 0 auto 114px;
     line-height: 32px;
 }
-.input_file {
+#upload-btn {
     background: #01b6fd;
     align-items: center;
     justify-content: center;
@@ -38,9 +38,11 @@ h2 {
     line-height: 32px;
     border-radius: 8px;
     cursor: pointer;
+    border: 0;
 }
 @media (max-width: 512px) {
     .logo {
+        margin-top: 50px;
         width: 320px;
     }
 }
@@ -48,8 +50,8 @@ h2 {
     h1 {
         font-size: 32px;
     }
-    .input_file {
+    #upload-btn{
         font-size: 24px;
-        padding: 16px 48px;
+        padding: 16px 38px;
     }
 }
