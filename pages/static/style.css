@@ -25,15 +25,31 @@ h1 {
 h2 {
     font-size: 22px;
     font-weight: 400;
-    margin: 0 auto 114px;
+    margin: 0 auto 94px;
     line-height: 32px;
 }
+#upload-form {
+    display: inline-flex;
+}
 #upload-btn {
+    width: 68px;
+    height: 68px;
+    background: #01b6fd;
+    border-radius: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 0;
+}
+#download-image {
+    padding-top: 5px;
+}
+#update-btn {
+    color: #fff;
     background: #01b6fd;
     align-items: center;
     justify-content: center;
-    padding: 24px 56px;
-    font-weight: 600;
+    padding: 18px 26px;
+    font-weight: 400;
     font-size: 28px;
     line-height: 32px;
     border-radius: 8px;
@@ -50,7 +66,7 @@ h2 {
     h1 {
         font-size: 32px;
     }
-    #upload-btn{
+    #update-btn{
         font-size: 24px;
         padding: 16px 38px;
     }

@@ -7,26 +7,26 @@
     <title>Система нормоконтроля студенческих работ</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}">
 </head>
 <body>
     <header>
         <div class="wrapper">
-        <a href="#"><img src="{% static 'logo.png' %}" alt="Нормоконтроль студенческих работ" class="logo"></a>
+        <a href="#"><img src="{% static 'images/logo.png' %}" alt="Нормоконтроль студенческих работ" class="logo"></a>
         </div>
     </header>
     <main>
         <div class="wrapper">
-        <form action="script.py" method="POST">
         <h1>Редактирование документов WORD</h1>
         <h2>Оформите свои текстовые документы WORD в соответствии с актуальными ГОСТами</h2>
-        <input type="file" id="upload-file" name="filename" hidden="hidden" multiple="multiple">
-        <a id="upload-btn">Выбрать файлы</a><br><br><br>
-        <input type="submit" value="Редактировать">
-        <span id="upload-text"></span>
+        <form method="POST" action="/" enctype="multipart/form-data" id="upload-form">
+        {% csrf_token %}
+        <input type="file" id="upload-file" name="document" hidden="hidden" multiple>
+        <button type="submit" id="update-btn">Редактировать</button>
+        <div id="upload-btn"><img src="{% static 'images/upload-button.png' %}" id="download-image" alt="Добавить файлы" title="Добавить файлы"></div>
         </form>
         </div>
     </main>
     <script type="text/javascript" src="{% static 'script.js' %}"></script>
-    <script type="text/python" src="{% static 'script.py' %}"></script>
 </body>
 </html>
