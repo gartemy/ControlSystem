@@ -1,0 +1,6 @@
+- CHANGELOG commit
+- Uploading files
+- Uploading files
+- Django commit
+- Python commit
+- Initialized commit
