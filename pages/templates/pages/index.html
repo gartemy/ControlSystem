@@ -19,7 +19,7 @@
         <div class="wrapper">
         <h1>Редактирование документов WORD</h1>
         <h2>Оформите свои текстовые документы WORD в соответствии с актуальными ГОСТами</h2>
-        <form action="upload/" name="form" method="POST" enctype="multipart/form-data" id="upload-form">
+        <form method="POST" action="/" enctype="multipart/form-data" id="upload-form">
         {% csrf_token %}
         <input type="file" id="upload-file" name="document" hidden="hidden" multiple>
         <button type="submit" id="update-btn">Редактировать</button>
