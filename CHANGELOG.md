@@ -1,6 +1,18 @@
-- CHANGELOG commit
-- Uploading files
-- Uploading files
-- Django commit
-- Python commit
-- Initialized commit
+# Change log
+
+## 1.0.1 - 4 декабря 2020
+
+Uploading files update.
+
+**Добавлено:**
+- Readme
+- Change log
+- Загрузка файлов на сервер
+
+## 1.0.0 - 11 ноября 2020
+
+Initial realese.
+
+**Добавлено:**
+- Разметка главной страницы
+- Стили главной страницы
