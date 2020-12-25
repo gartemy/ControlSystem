@@ -2,7 +2,7 @@
 
 ## Приложение для оформления студенческих работ
 
-Версия 1.0 - [Change log](CHANGELOG.md)
+Версия 1.0.1 - [Change log](CHANGELOG.md)
 
 **Авторы:**
 * Ганьжа Артём [gartemy](https://github.com/gartemy)
