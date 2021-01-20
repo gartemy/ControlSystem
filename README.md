@@ -29,10 +29,10 @@
 * SQLITE 3.34.1
 
 ## Рекомендации к установке
-Для корректного запуска сайта потребуются установить Django.
-Для этого рекомендуем ознакомиться с инструкцией по быстрой установке: https://django.fun/docs/django/ru/3.0/intro/install/
-Также для работы с загружаемыми документами необходимо установить библиотеку python-docx.
-С инструкцией по ее установке можно ознакомиться по ссылке: https://python-docx.readthedocs.io/en/latest/user/install.html#install
+Для корректного запуска сайта потребуются установить Django.  
+Для этого рекомендуем ознакомиться с инструкцией по быстрой установке: https://django.fun/docs/django/ru/3.0/intro/install/  
+Также для работы с загружаемыми документами необходимо установить библиотеку python-docx.  
+Инструкция по установке библиотеки: https://python-docx.readthedocs.io/en/latest/user/install.html#install   
 
 ## Внешний вид приложения
 <img src="https://github.com/gartemy/ControlSystem/blob/master/pages/static/images/readme-interface.png" >
