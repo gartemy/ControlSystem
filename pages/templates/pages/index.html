@@ -28,13 +28,7 @@
         <div id="upload-btn"><img src="{% static 'images/upload-button.png' %}" id="download-image" alt="Добавить файлы" title="Добавить файлы"></div>
         </form>
         {% endblock %}
-        </div>
-        <p>
-            {% for document in documents %}
-                <p><a href="{{ document }}">{{ document.name }}</a></p>
-            {% endfor %}
-        </p>
-            
+        </div>   
     </main>
     <script type="text/javascript" src="{% static 'script.js' %}"></script>
 </body>
