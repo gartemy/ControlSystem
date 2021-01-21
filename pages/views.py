@@ -12,7 +12,7 @@ def index(request):
             form.save()
             connection = sqlite3.connect('db.sqlite3')
             cursor = conn.cursor()
-            document = execute("SELECT document FROM pages_document WHERE document = '%s'" %document_name
+            document = execute("SELECT document FROM pages_document WHERE document = '%s'" %document_name) 
             edit('media/documents/' + document)
             document_path = 'media/documents/' + document
             FilePointer = open(document_path,"rb")
