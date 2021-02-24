@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, HttpResponse
 from .forms import DocumentForm
 from .models import Document
 from .edit import edit
-import os, sqlite3
+import pymysql, os
 
 def index(request):
     if request.method == 'POST':
@@ -10,8 +10,11 @@ def index(request):
         document_name = request.FILES['document'].name
         if form.is_valid() and document_name.endswith(".doc") or document_name.endswith(".docx"):
             form.save()
-            edit('media/documents/' + document_name)
-            document_path = 'media/documents/' + document_name
+            connection = pymysql.connect('localhost', 'root', '', 'controlsystem')
+            cursor = connection.cursor()
+            document= cursor.execute("SELECT document FROM pages_document WHERE document = '%s'" %document_name)
+            edit('media/' + document )
+            document_path = 'media/documents/' + document
             FilePointer = open(document_path,"rb")
             response = HttpResponse(FilePointer,content_type='application/msword')
             response['Content-Disposition'] = 'attachment; filename=%s' %document_name
