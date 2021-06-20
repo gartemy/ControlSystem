@@ -17,19 +17,34 @@
     </header>
     <main>
         <div class="wrapper">
-        <h1>Редактирование документов WORD</h1>
-        <h2>Оформите свои текстовые документы WORD в соответствии с актуальными ГОСТами</h2>
-        {% block content %}
-        <form method="POST" action="/" enctype="multipart/form-data" id="upload-form">
-        {% csrf_token %}
-        <input type="file" id="upload-file" name="document" hidden="hidden" multiple>
-        <span></span>
-        <button type="submit" id="update-btn">Редактировать</button>
-        <div id="upload-btn"><img src="{% static 'images/upload-button.png' %}" id="download-image" alt="Добавить файлы" title="Добавить файлы"></div>
-        </form>
-        {% endblock %}
-        </div>   
+            <h1>Редактирование документов WORD</h1>
+            <h2>Оформите свои текстовые документы DOCX в соответствии с актуальными ГОСТами</h2>
+            {% block content %}
+            <form method="POST" action="/" enctype="multipart/form-data" id="upload-form" accept-charset="UTF-8">
+                {% csrf_token %}
+                <div class="file-drop-area">
+                    <span class="fake-btn">Выбрать документы</span>
+                    <span class="file-msg">или перетащите их сюда</span>
+                    <input class="file-input" type="file" name="document" multiple>
+                </div>
+                <span class="rules-open">Правила пользования</span>
+                <div class="rules-fade">
+                    <div class="rules">
+                        <span class="rules-close">Закрыть</span>
+                        <ul class="rules-list">
+                            <li>Текстовый документ должен быть создан <br> <strong>в программе Microsoft Word</strong> (не через проводник!)</li>
+                            <li>Редактируются только текстовые документы <strong>формата DOCX</strong>!</li>
+                            <li>Титульный лист и содержание <strong>не редактируются</strong> (их необходимо убрать из документа перед началом редактирования).</li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="submit" id="update-btn">Редактировать</button>
+            </form>
+            {% endblock %}
+        </div>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="{% static 'script.js' %}"></script>
+    <script type="text/javascript" src="{% static 'rules.js' %}"></script>
 </body>
 </html>

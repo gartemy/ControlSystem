@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = ')gvxma25_5+!pgzns!&r2=4_ympgd_btij%71aozw1p50&bych'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -78,11 +78,10 @@ WSGI_APPLICATION = 'controlsystem.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'controlsystem',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost', 
-        'PORT': '3306',
+        'NAME': 'gartemy$controlsystem',
+        'USER': 'gartemy',
+        'PASSWORD': 'ISiT293901',
+        'HOST': 'gartemy.mysql.pythonanywhere-services.com',
     }
 }
 
@@ -132,5 +131,5 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'pages/media')
 
