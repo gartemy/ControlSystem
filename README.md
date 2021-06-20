@@ -43,4 +43,5 @@
 Статья про способы подключения библиотеки jQuery к проекту: http://w3.org.ua/jquery/podklyuchenie-biblioteki-jquery-4-sposoba/
 
 ## Внешний вид приложения
-<img src="https://github.com/gartemy/ControlSystem/blob/master/pages/static/images/readme-interface.png" >
+<img src="https://github.com/gartemy/ControlSystem/blob/master/pages/static/images/readme-interface.png" >  
+<img src="https://github.com/gartemy/ControlSystem/blob/master/pages/static/images/readme-interface2.png" >
